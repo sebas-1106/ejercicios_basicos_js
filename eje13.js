@@ -17,24 +17,22 @@ const names = [
 
 // Función para buscar un nombre en el array
 function nameFinder(nameList, value) {
-    // Buscar el índice del valor en el array
     const index = nameList.indexOf(value);
-
-    // Comprobar si el valor existe en el array
+    let result;
+    
     if (index !== -1) {
-        return { exists: true, position: index };
+        result=true;
+        console.log("La palabra a buscar se encuentra en el array?")
+        console.log(true, "y esta en la posicion ", index)
     } else {
-        return { exists: false };
+        result=false;
+        console.log("La palabra a buscar se encuentra en el array?")
+        console.log(result);
+        
     }
 }
+const nameOne = 'Tony';
+const result = nameFinder(names, nameOne)
 
-// Ejemplo de uso
-const searchValue = 'Tony';
-const result = nameFinder(names, searchValue);
-
-console.log(result); // Devuelve: { exists: true, position: 2 }
-
-const searchValueNotFound = 'John';
-const resultNotFound = nameFinder(names, searchValueNotFound);
-
-console.log(resultNotFound); // Devuelve: { exists: false }
+const nameTwo = 'John';
+const result2 = nameFinder(names, nameTwo);
