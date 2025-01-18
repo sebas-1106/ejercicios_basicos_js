@@ -18,18 +18,20 @@ const words = [
     'sleep',
     'code'
   ];
-  function repeatCounter(list) {
-    let wordCounts={};
+  function contarRepeticiones(array) {
+    const contador = {};
 
-    for (const element of list) {
-        if (wordCounts[list]) {
-            wordCounts[list]++;
+    array.forEach(palabra => {
+        // Si la palabra ya existe en el contador, incrementamos su valor
+        if (contador[palabra]) {
+            contador[palabra]++;
         } else {
-            wordCounts[list] = 1;
-        }   
-    }
+            // Si no existe, la inicializamos en 1
+            contador[palabra] = 1;
+        }
+    });
 
-    return wordCounts;
-  }
-  const result= repeatCounter(words);
-  console.log(result);
+    return contador;
+}
+const resultado = contarRepeticiones(words);
+console.log(resultado);
