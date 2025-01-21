@@ -17,7 +17,9 @@ const capitals = {
   };
   
   function getCapital(country) {
-    // insert code
-  }
-  
-  
+    if (country in capitals) {
+      return capitals[country];
+      } else {
+        return `No se encontró la capital de ${country}.`;
+        }
+        }

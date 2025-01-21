@@ -15,4 +15,15 @@ const movies = [
   ];
   
   // Añade tu código de bucle aquí
+  let countBefore2000 = 0;
+  let countAfter2000 = 0;
+  for (let i = 0; i < movies.length; i++) {
+    if (movies[i].releaseYear < 2000) {
+      countBefore2000++;
+      } else {
+        countAfter2000++;
+        }
+        }
+        console.log(`Películas antes del 2000: ${countBefore2000}`);
+        console.log(`Películas después del 2000: ${countAfter2000}`);
   

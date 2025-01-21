@@ -13,5 +13,12 @@ const albums = [
   ];
   
   // Añade tu código de bucle aquí
+  let total = 0;
+  for (let i = 0; i < albums.length; i++) {
+    if (albums[i].genre === 'Rock') {
+      total += albums[i].duration;
+      }
+      }
+      console.log(total); // Imprime el total de duraciones de los álbumes de rock por consola.
   
   

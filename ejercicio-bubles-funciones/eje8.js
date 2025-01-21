@@ -8,4 +8,12 @@ const artists = [
   ];
   
   // Añade tu código de bucle aquí
+  for (let i = 0; i < artists.length; i++) {
+    console.log(artists[i].name);
+    for (let j = 0; j < artists[i].influences.length; j++) {
+      console.log(artists[i].influences[j]);
+      }
+      }
+      // Imprime cada par de artista e influencia directa en la consola 
+      console.log(artists[i].name + " - " + artists[i].influencias[ 0]);
   

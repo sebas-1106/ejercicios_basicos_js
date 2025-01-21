@@ -15,4 +15,13 @@ const tracks = [
   ];
   
   // Añade tu código de bucle aquí
+  const categorias = {};
+  tracks.forEach((track) => {
+    if (!categorias[track.genre]) {
+      categorias[track.genre] = [];
+      }
+      categorias[track.genre].push(track.title);
+      });
+      console.log(categorias);
+      
   

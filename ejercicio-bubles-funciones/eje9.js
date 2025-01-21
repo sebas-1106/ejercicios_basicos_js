@@ -15,7 +15,23 @@ const xMen = [
   ];
   
   function findOldestXMen(xMen) {
-    // insert code
-  }
+    // Primero, debemos encontrar el miembro más antiguo en el array.
+    // Podemos hacer esto usando el método reduce() de JavaScript, que aplica una función a cada elemento de un array y devuelve un valor resultante.
+    return xMen.reduce((oldest, current) => {
+      // Si el año de aparición del miembro actual es menor que el año de aparición del miembro más antiguo encontrado hasta ahora, actualizamos el miembro más antiguo.
+      if (current.year < oldest.year) {
+        return current;
+        }
+        // Si el año de aparición del miembro actual es igual al año de aparición del miembro más antiguo encontrado hasta ahora, actualizamos el miembro más antiguo si el nombre del miembro actual es anterior al nombre del miembro más antiguo.
+        else if (current.year === oldest.year && current.name < oldest.name) {
+          return current;
+          }
+          // Si el año de aparición del miembro actual es mayor o igual al año de aparición del miembro más antiguo encontrado hasta ahora, no actualizamos el miembro más antiguo.
+          else {
+            return oldest;
+            }
+            });
+            }
+            
   
   

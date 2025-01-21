@@ -17,7 +17,9 @@ const movies = [
   ];
   
   function averageMovieDuration(movies) {
-    // insert code
+    let sum = 0;
+    for (let i = 0; i < movies.length; i++) {
+      sum += movies[i].duration;
+      }
   }
-  
   

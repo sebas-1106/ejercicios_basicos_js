@@ -16,6 +16,12 @@ const mutants = [
   ];
   
   function findMutantByPower(mutants, power) {
-    // insert code
+    let mutantFound = false;
+    let message = '';
+    for (let i = 0; i < mutants.length; i++) {
+      if (mutants[i].power === power) {
+    mutantFound = true;
+    message = `Mutant found: ${mutants[i].name} with power ${power}` ;
+    }
   }
-  
+}

@@ -16,5 +16,14 @@ const starWarsMovies = [
   ];
   
   // Añade tu código de bucle aquí
+  const groupedMovies = {};
+  for (const movie of starWarsMovies) {
+    const decade = Math.floor(movie.releaseYear / 10) * 10;
+    if (!groupedMovies[decade]) {
+      groupedMovies[decade] = [];
+      }
+      groupedMovies[decade].push(movie.title);
+      }
+      console.log(groupedMovies);
   
   

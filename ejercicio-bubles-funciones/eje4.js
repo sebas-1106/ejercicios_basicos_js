@@ -15,4 +15,12 @@ const cartoons = [
   ];
   
   // Añade tu código de bucle aquí
+  let oldestCartoon = cartoons[0];
+  for (let i = 1; i < cartoons.length; i++) {
+    if (cartoons[i].debut < oldestCartoon.debut) {
+      oldestCartoon = cartoons[i];
+      }
+      }
+      console.log(oldestCartoon.name);
+      
   
