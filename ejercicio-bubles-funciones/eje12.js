@@ -21,7 +21,18 @@ const mutants = [
     for (let i = 0; i < mutants.length; i++) {
       if (mutants[i].power === power) {
     mutantFound = true;
-    message = `Mutant found: ${mutants[i].name} with power ${power}` ;
+    console.log(" Mutante encontrado con el poder: " + power);
     }
+
   }
+  if (mutantFound) {
+    message = "El mutante con el poder '" + power + "' fue encontrado.";
+    console.log(message)
+    } else {
+      message = "No se encontró ningún mutante con el poder '" + power + "'.";
+      console.log(message)
+      }
+      return message;
+      
 }
+findMutantByPower(mutants, 'telekinesis');

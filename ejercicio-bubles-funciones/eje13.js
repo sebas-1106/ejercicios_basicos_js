@@ -22,4 +22,5 @@ const actors = [
       });
       return actorsWithAges;
       }
+      console.log( calculateActorsAges(actors));
       

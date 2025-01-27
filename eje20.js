@@ -23,4 +23,6 @@ for (const toy of toys) {
         popularToys.push(toy)
         }
     }
+    // Se imprime el array popularToys por consola 
+    console.log(popularToys)
     

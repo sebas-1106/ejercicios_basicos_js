@@ -18,8 +18,12 @@ const movies = [
   
   function averageMovieDuration(movies) {
     let sum = 0;
+    let result;
     for (let i = 0; i < movies.length; i++) {
       sum += movies[i].duration;
+      result = sum / movies.length;
       }
+      return result;
   }
+console.log(" el promedio de las películas es: ",averageMovieDuration( movies));
   

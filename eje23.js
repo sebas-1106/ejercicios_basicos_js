@@ -18,6 +18,6 @@ const movies = [
   const smallMovies = movies.filter(movie => movie.durationInMinutes < 100);
   const mediumMovies = movies.filter(movie => movie.durationInMinutes >= 100 && movie.durationInMinutes < 200);
     const largeMovies = movies.filter(movie => movie.durationInMinutes >= 200);
-    console.log(smallMovies);
-    console.log(mediumMovies);
-    console.log(largeMovies);
+    console.log(" peliculas de menos de 100 minutos de duracion", smallMovies);
+    console.log(" peliculas mayores o igual a 100 minutos y menores a 200 minutos de duracion", mediumMovies);
+    console.log(" peliculas mayores o igual a 200 minutos de duracion", largeMovies);

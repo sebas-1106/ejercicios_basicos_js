@@ -8,10 +8,10 @@ const users = [
   ];
   for (let i = 0; i < users.length; i++) {
     if (users[i].years < 18) {
-        console.log("Usuarios menores de edad: " + users[i].name);
-        } else {
-            console.log("Usuarios mayores de edad: " + users[i].name);
-            }
-            }
-            console.log(users);
+      console.log("Usuarios menores de edad: " + users[i].name);
+    } else {
+      console.log("Usuarios mayores de edad: " + users[i].name);
+    }
+}
+console.log(users);
             

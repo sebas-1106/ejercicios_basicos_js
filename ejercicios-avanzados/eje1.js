@@ -27,4 +27,7 @@ const movies = [
       categories: ["comedia", "aventura", "animación"],
     },
   ];
+  const categorias = movies.map(movie => movie.categories).flat().filter((value, index, self) => self.indexOf(value) === index);
+  console.log(categorias);
+  
   
