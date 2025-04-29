@@ -15,9 +15,22 @@ const movies = [
     { name: "Amélie", durationInMinutes: 110 },  
     { name: "Eternal Sunshine of the Spotless Mind", durationInMinutes: 108 },
   ];
-  const smallMovies = movies.filter(movie => movie.durationInMinutes < 100);
-  const mediumMovies = movies.filter(movie => movie.durationInMinutes >= 100 && movie.durationInMinutes < 200);
-    const largeMovies = movies.filter(movie => movie.durationInMinutes >= 200);
-    console.log(" peliculas de menos de 100 minutos de duracion", smallMovies);
-    console.log(" peliculas mayores o igual a 100 minutos y menores a 200 minutos de duracion", mediumMovies);
-    console.log(" peliculas mayores o igual a 200 minutos de duracion", largeMovies);
+
+  const smallMovies=[];
+  const mediumMovies=[];
+  const largeMovies=[];
+  for (const movie of movies) {
+    if (movie.durationInMinutes<100) {
+      smallMovies.push(movie);
+    }
+    else if (movie.durationInMinutes>100 && movie.durationInMinutes<200 ) {
+      mediumMovies.push(movie);
+    }
+    else if(movie.durationInMinutes>200){
+      largeMovies.push(movie);
+    }
+  }
+
+console.log(" peliculas de menos de 100 minutos de duracion", smallMovies);
+console.log(" peliculas mayores o igual a 100 minutos y menores a 200 minutos de duracion", mediumMovies);
+console.log(" peliculas mayores o igual a 200 minutos de duracion", largeMovies);

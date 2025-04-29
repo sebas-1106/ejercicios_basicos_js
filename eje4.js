@@ -1,7 +1,7 @@
 //Dado el siguiente array:
 const aldeanos = ["Fibrilio", "Narciso", "Vacarena", "Tendo", "Nendo"];
 //4.1 - Saca a "Tendo" por consola atacando su posición.
-console.log(aldeanos[4]);
+console.log(aldeanos[3]);
 //4.2 - Coloca en el último lugar de este array a "Cervasio".
 aldeanos.push("Cervasio");
 console.log(aldeanos)

@@ -4,7 +4,8 @@ Modifica el siguiente código JavaScript para actualizar la edad de Luke Skywalk
 const jedi ={  nombre: "Luke Skywalker", edad: 19};
 
 // Tu código para cambiar la edad aquí...
-console.log(jedi[edad=25]);
+jedi.edad=25
+console.log(jedi);
 
 /*2.2
 - Crea tres variables con la siguiente información:
@@ -17,7 +18,7 @@ edad: 20
 let nombre="Leia";
 let apellido= "Organa";
 let edad=20;
-console.log("Soy ", nombre,apellido, " tengo ", edad, " años ", " y soy una princesa de Alderaan");
+console.log(`Soy ", ${nombre,apellido}, tengo ", ${edad}, años y soy una princesa de Alderaan`);
 
 /*2.3
 - Obtén el precio total de dos sables de luz: "Shoto de Yoda" y "sable de Darth Vader".
@@ -46,12 +47,12 @@ console.log(precioBaseGlobal);
 const nave1 = {nombre: "Ala-X", precioBase: 50000, precioFinal: 60000};
 const nave2 = {nombre: "Halcón Milenario", precioBase: 70000, precioFinal: 80000};
 
+// Tu código para actualizar el precio final de cada nave aquí...
 nave1.precioBase+= precioBaseGlobal;
 console.log(nave1.precioBase);
 nave2.precioBase+= precioBaseGlobal;
 console.log(nave2.precioBase)
 
-// Tu código para actualizar el precio final de cada nave aquí...
 
 nave1.precioFinal=85000;
 nave2.precioFinal=105000;

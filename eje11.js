@@ -16,8 +16,6 @@ function averageWord(list) {
             total+=item.length;
         } 
     }
-    // for(let index = 0; index < list.length; index++)
-    //Al poner este for me daba otro resultado
     total= total/list.length
     console.log(total)
 

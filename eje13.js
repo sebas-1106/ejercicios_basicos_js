@@ -23,7 +23,7 @@ function nameFinder(nameList, value) {
     if (index !== -1) {
         result=true;
         console.log("La palabra a buscar se encuentra en el array?")
-        console.log(true, "y esta en la posicion ", index)
+        console.log(result, "y esta en la posicion ", index)
     } else {
         result=false;
         console.log("La palabra a buscar se encuentra en el array?")

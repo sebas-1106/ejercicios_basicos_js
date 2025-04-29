@@ -13,5 +13,10 @@ const toys = [
     {id: 71, name: 'Sylvanian Families - Familia gato'}
 ];
 // Tu código aquí:
-const toysWithoutCat = toys.filter(toy => !toy.name.includes('gato'));
-console.log(toysWithoutCat);
+let newToys=[]
+for (const toy of toys) {
+    if (!toy.name.toLocaleLowerCase().includes('gato')) {
+        newToys.push(toy)
+    }
+}
+console.log(newToys)

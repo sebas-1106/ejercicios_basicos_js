@@ -19,6 +19,6 @@ const albums = [
       total += albums[i].duration;
       }
       }
-      console.log(total); // Imprime el total de duraciones de los álbumes de rock por consola.
+      console.log(total); 
   
   

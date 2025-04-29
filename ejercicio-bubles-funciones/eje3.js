@@ -21,9 +21,9 @@ const songs = [
     if (songs[i].genre === 'Rock' && songs[i].duration > 5){
       rockPlaylist.push(songs[i]);
     }
-    console.log(rockPlaylist); 
-    }
     
+    }
+    console.log(rockPlaylist); 
   
   
   
