@@ -16,11 +16,10 @@ const actors = [
   
   function calculateActorsAges(actors) {
     const currentYear = new Date().getFullYear();
-    const actorsWithAges = actors.map(actor => {
-      const age = currentYear - actor.born;
-      return { name: actor.name, age };
-      });
-      return actorsWithAges;
-      }
-      console.log( calculateActorsAges(actors));
+    for (const ages of actors) {
+      const age = currentYear - ages.born;
+      console.log(ages.name, 'edad: ', age);
+    }
+  }
+console.log(calculateActorsAges(actors));
       

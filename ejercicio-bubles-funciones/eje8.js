@@ -5,14 +5,14 @@ const artists = [
     { name: 'Eddie Vedder', influences: ['The Who', 'Neil Young', 'Jim Morrison'] },
     { name: 'Freddie Mercury', influences: ['Liza Minnelli', 'Jimi Hendrix', 'Aretha Franklin'] },
     { name: 'John Lennon', influences: ['Elvis Presley', 'Chuck Berry', 'Buddy Holly'] }
-  ];
+];
   
   // Añade tu código de bucle aquí
-  for (let i = 0; i < artists.length; i++) {
-    console.log(artists[i].name);
-    for (let j = 0; j < artists[i].influences.length; j++) {
-      console.log( artists[i].name + " - " + artists[i].influences[j]);
-      }
-      }
+for (let i = 0; i < artists.length; i++) {
+  console.log(artists[i].name);
+  for (let j = 0; j < artists[i].influences.length; j++) {
+      console.log( 'influences', ' - ',artists[i].influences[j]);
+    }
+  }
       
   

@@ -13,7 +13,7 @@ const starWarsMovies = [
     { title: 'The Rise of Skywalker', releaseYear: 2019 },
     { title: 'Rogue One', releaseYear: 2016 },
     { title: 'Solo', releaseYear: 2018 }
-  ];
+];
   
   // Añade tu código de bucle aquí
   const groupedMovies = {};
@@ -22,8 +22,8 @@ const starWarsMovies = [
     if (!groupedMovies[decade]) {
       groupedMovies[decade] = [];
       }
-      groupedMovies[decade].push(movie.title);
-      }
-      console.log(groupedMovies);
+    groupedMovies[decade].push(movie.title);
+  }
+console.log(groupedMovies);
   
   

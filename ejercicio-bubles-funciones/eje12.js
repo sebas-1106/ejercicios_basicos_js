@@ -28,11 +28,11 @@ const mutants = [
   if (mutantFound) {
     message = "El mutante con el poder '" + power + "' fue encontrado.";
     console.log(message)
-    } else {
-      message = "No se encontró ningún mutante con el poder '" + power + "'.";
-      console.log(message)
-      }
-      return message;
+  } else {
+    message = "No se encontró ningún mutante con el poder '" + power + "'.";
+    console.log(message)
+  }
+  return message;
       
 }
 findMutantByPower(mutants, 'telekinesis');

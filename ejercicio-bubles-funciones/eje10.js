@@ -16,16 +16,16 @@ const capitals = {
     Ireland: 'Dublin'
   };
   
-  function getCapital(country) {
+function getCapital(country) {
     if (!country) {
       return "Por favor pon un pais"
     }
     if (country in capitals) {
       return capitals[country];
-      } else {
-        return `No se encontró la capital de ${country}.`;
-        }
-        }
-        console.log(getCapital('Spain')); // Madrid
-        console.log(getCapital('Japan')); // No se encontró la capital de Japan.
-        console.log(getCapital()); 
+    } else {
+      return `No se encontró la capital de ${country}.`;
+    }
+}
+console.log(getCapital('Spain')); // Madrid
+console.log(getCapital('Japan')); 
+console.log(getCapital()); 
