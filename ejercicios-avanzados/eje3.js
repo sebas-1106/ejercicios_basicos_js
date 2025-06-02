@@ -39,3 +39,25 @@ const users = [
       },
     },
   ];
+
+const allSounds = [];
+
+for (const user of users) {
+  for (const sound in user.favoritesSounds) {
+    allSounds.push(sound);  array
+  }
+}
+
+const soundCounts = {};
+
+for (const sound of allSounds) {
+  if (soundCounts[sound]) {
+    soundCounts[sound] += 1; 
+  } else {
+    soundCounts[sound] = 1;
+  }
+}
+
+for (const sound in soundCounts) {
+  console.log(`${sound} ha sido agregado a favorito ${soundCounts[sound]} veces`);
+}
